@@ -1,0 +1,190 @@
+main {
+    #section_2 {
+        .main_title {
+            margin-top: 50px;
+            font-weight: bold;
+            color: $text_color;
+        }
+
+        .title {
+            width: 90%;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+    
+        p {
+            margin-bottom: 50px;
+            font-size: 16px;
+            font-weight: bold;
+            color: $text_color;
+        }
+    
+        button {
+            margin-right: 10px;
+            padding: 5px;
+            border-color: rgb(5, 74, 114);
+            @include border_radius(5px);
+            background-color: #2c4792;
+    
+            img {
+                height: 25px;
+            }
+    
+            span {
+                margin-left: 5px;
+                font-weight: bold;
+                color: white;
+            }
+        }
+    
+        span {
+            margin-right: 10px;
+            font-weight: bold;
+            color: $text_color;
+    
+            i {
+                margin-left: 5px;
+            }
+        }
+    
+        .email_sign_up {
+            margin-top: 20px;
+        }
+    
+        .main_illustration {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+    }
+
+    #section_3 {
+        background-color: #ffe7d2;
+
+        .main_title {
+            margin: 50px 0;
+            font-size: 25px;
+            font-weight: bold;
+            color: $text_color;
+        }
+
+        .small_card {
+            margin: 30px 0;
+
+            img {
+                width: 50%;
+            }
+        }
+
+        .card_3 {
+            img {
+                width: 40%;
+            }
+        }
+
+        .card_4 {
+            img {
+                width: 60%;
+            }
+        }
+
+        .card_6 {
+            img {
+                width: 19%;
+            }
+        }
+
+        .card_description {
+            span {
+                font-weight: bold;
+                color: $text_color
+            }
+        }
+
+        .description_1 {
+            padding-top: 27px;
+        }
+
+        .description_4 {
+            padding-top: 16px;
+        }
+
+        .description_5 {
+            padding-top: 5px;
+        }
+
+        .description_6 {
+            padding-top: 4px;
+        }
+
+        .big_card {
+            margin-top: 60px;
+            margin-bottom: 80px;
+            padding-right: 25px;
+
+            img {
+                width: 85%;
+            }
+        }
+
+        .separator {
+            border-bottom: 1px solid black;
+        }
+    }
+
+    #section_4 {
+        padding-top: 50px;
+
+        .central_row {
+            padding: 30px 0;
+
+            .col {
+                position: relative;
+            }
+
+            .card {
+                width: 100%;
+            }
+
+            .small_title {
+                margin-bottom: 40px;
+                font-size: 20px;
+                font-weight: bold;
+                color: $text_color;
+            }
+
+            p {
+                width: 50%;
+                font-size: 15px;
+                color: $text_color;
+            }
+
+            .link {
+                span {
+                    a,i {
+                        font-weight: bold;
+                    }
+    
+                    i {
+                        margin-left: 5px;
+                    }
+                }
+            }
+
+            .cartoon {
+                margin-top: 30px; 
+
+                img {
+                    width: 50%;
+                }
+            }
+
+        
+        }
+
+    
+
+
+    }
+
+
+}

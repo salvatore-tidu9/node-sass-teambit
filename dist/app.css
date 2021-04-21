@@ -1,0 +1,196 @@
+.container {
+  border: 1px solid red;
+}
+
+.row {
+  border: 1px solid black;
+}
+
+[class*=col] {
+  border: 1px solid orange;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+nav {
+  padding-top: 20px;
+  border-bottom: 1px solid black;
+}
+nav .logo {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+nav .menu {
+  float: right;
+}
+nav .menu li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 35px;
+}
+nav .menu a, nav .menu i {
+  font-weight: bold;
+  color: #5f2222;
+}
+nav .menu i {
+  font-size: 12px;
+}
+nav .menu a:hover, nav .menu i:hover {
+  text-decoration: none;
+  color: black;
+}
+nav .menu button {
+  padding: 5px;
+  border-color: #054a72;
+  border-radius: 5px;
+}
+nav .menu button img {
+  height: 25px;
+}
+nav .menu button span {
+  margin-left: 5px;
+  font-weight: bold;
+  color: #054a72;
+}
+
+main #section_2 .main_title {
+  margin-top: 50px;
+  font-weight: bold;
+  color: #5f2222;
+}
+main #section_2 .title {
+  width: 90%;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+main #section_2 p {
+  margin-bottom: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #5f2222;
+}
+main #section_2 button {
+  margin-right: 10px;
+  padding: 5px;
+  border-color: #054a72;
+  border-radius: 5px;
+  background-color: #2c4792;
+}
+main #section_2 button img {
+  height: 25px;
+}
+main #section_2 button span {
+  margin-left: 5px;
+  font-weight: bold;
+  color: white;
+}
+main #section_2 span {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #5f2222;
+}
+main #section_2 span i {
+  margin-left: 5px;
+}
+main #section_2 .email_sign_up {
+  margin-top: 20px;
+}
+main #section_2 .main_illustration {
+  width: 100%;
+  margin-bottom: 50px;
+}
+main #section_3 {
+  background-color: #ffe7d2;
+}
+main #section_3 .main_title {
+  margin: 50px 0;
+  font-size: 25px;
+  font-weight: bold;
+  color: #5f2222;
+}
+main #section_3 .small_card {
+  margin: 30px 0;
+}
+main #section_3 .small_card img {
+  width: 50%;
+}
+main #section_3 .card_3 img {
+  width: 40%;
+}
+main #section_3 .card_4 img {
+  width: 60%;
+}
+main #section_3 .card_6 img {
+  width: 19%;
+}
+main #section_3 .card_description span {
+  font-weight: bold;
+  color: #5f2222;
+}
+main #section_3 .description_1 {
+  padding-top: 27px;
+}
+main #section_3 .description_4 {
+  padding-top: 16px;
+}
+main #section_3 .description_5 {
+  padding-top: 5px;
+}
+main #section_3 .description_6 {
+  padding-top: 4px;
+}
+main #section_3 .big_card {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  padding-right: 25px;
+}
+main #section_3 .big_card img {
+  width: 85%;
+}
+main #section_3 .separator {
+  border-bottom: 1px solid black;
+}
+main #section_4 {
+  padding-top: 50px;
+}
+main #section_4 .central_row {
+  padding: 30px 0;
+}
+main #section_4 .central_row .col {
+  position: relative;
+}
+main #section_4 .central_row .card {
+  width: 100%;
+}
+main #section_4 .central_row .small_title {
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #5f2222;
+}
+main #section_4 .central_row p {
+  width: 50%;
+  font-size: 15px;
+  color: #5f2222;
+}
+main #section_4 .central_row .link span a, main #section_4 .central_row .link span i {
+  font-weight: bold;
+}
+main #section_4 .central_row .link span i {
+  margin-left: 5px;
+}
+main #section_4 .central_row .cartoon {
+  margin-top: 30px;
+}
+main #section_4 .central_row .cartoon img {
+  width: 50%;
+}
