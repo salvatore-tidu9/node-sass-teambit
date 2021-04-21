@@ -1,15 +1,3 @@
-.container {
-  border: 1px solid red;
-}
-
-.row {
-  border: 1px solid black;
-}
-
-[class*=col] {
-  border: 1px solid orange;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -18,45 +6,79 @@
 }
 
 body {
+  min-width: 428px;
   font-family: "Lato", sans-serif;
 }
 
-nav {
+@media screen and (max-width: 991px) {
+  [class*=col] {
+    text-align: center;
+  }
+
+  .logo_container {
+    padding-bottom: 10px;
+    text-align: left;
+  }
+
+  .menu, .central_row p {
+    display: none;
+  }
+
+  header nav .hamburger_menu {
+    visibility: visible;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hamburger_menu {
+    visibility: hidden;
+    padding-bottom: 10px;
+  }
+}
+header nav {
+  position: relative;
   padding-top: 20px;
   border-bottom: 1px solid black;
 }
-nav .logo {
-  margin-top: 10px;
+header nav .logo {
+  width: 120px;
+  margin-top: 5px;
   margin-left: 30px;
+  margin-bottom: 15px;
 }
-nav .menu {
+header nav .hamburger_menu {
+  position: absolute;
+  right: 10px;
+  line-height: 50px;
+  font-size: 30px;
+}
+header nav .menu {
   float: right;
 }
-nav .menu li {
+header nav .menu li {
   list-style: none;
   display: inline-block;
-  margin-right: 35px;
+  margin-right: 25px;
 }
-nav .menu a, nav .menu i {
+header nav .menu a, header nav .menu i {
   font-weight: bold;
-  color: #5f2222;
+  color: #3E14E9;
 }
-nav .menu i {
+header nav .menu i {
   font-size: 12px;
 }
-nav .menu a:hover, nav .menu i:hover {
+header nav .menu a:hover, header nav .menu i:hover {
   text-decoration: none;
   color: black;
 }
-nav .menu button {
+header nav .menu button {
   padding: 5px;
   border-color: #054a72;
   border-radius: 5px;
 }
-nav .menu button img {
+header nav .menu button img {
   height: 25px;
 }
-nav .menu button span {
+header nav .menu button span {
   margin-left: 5px;
   font-weight: bold;
   color: #054a72;
@@ -65,10 +87,10 @@ nav .menu button span {
 main #section_2 .main_title {
   margin-top: 50px;
   font-weight: bold;
-  color: #5f2222;
+  color: #3E14E9;
 }
 main #section_2 .title {
-  width: 90%;
+  width: 100%;
   margin-bottom: 20px;
   font-size: 30px;
 }
@@ -76,7 +98,7 @@ main #section_2 p {
   margin-bottom: 50px;
   font-size: 16px;
   font-weight: bold;
-  color: #5f2222;
+  color: #3E14E9;
 }
 main #section_2 button {
   margin-right: 10px;
@@ -96,7 +118,7 @@ main #section_2 button span {
 main #section_2 span {
   margin-right: 10px;
   font-weight: bold;
-  color: #5f2222;
+  color: #3E14E9;
 }
 main #section_2 span i {
   margin-left: 5px;
@@ -109,13 +131,13 @@ main #section_2 .main_illustration {
   margin-bottom: 50px;
 }
 main #section_3 {
-  background-color: #ffe7d2;
+  background-color: #7F14D4;
 }
 main #section_3 .main_title {
   margin: 50px 0;
   font-size: 25px;
   font-weight: bold;
-  color: #5f2222;
+  color: white;
 }
 main #section_3 .small_card {
   margin: 30px 0;
@@ -134,7 +156,7 @@ main #section_3 .card_6 img {
 }
 main #section_3 .card_description span {
   font-weight: bold;
-  color: #5f2222;
+  color: white;
 }
 main #section_3 .description_1 {
   padding-top: 27px;
@@ -165,32 +187,127 @@ main #section_4 {
 main #section_4 .central_row {
   padding: 30px 0;
 }
-main #section_4 .central_row .col {
-  position: relative;
-}
 main #section_4 .central_row .card {
   width: 100%;
 }
 main #section_4 .central_row .small_title {
   margin-bottom: 40px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
-  color: #5f2222;
+  color: #3E14E9;
 }
 main #section_4 .central_row p {
   width: 50%;
   font-size: 15px;
-  color: #5f2222;
+  color: #3E14E9;
 }
-main #section_4 .central_row .link span a, main #section_4 .central_row .link span i {
+main #section_4 .central_row span a, main #section_4 .central_row span i {
   font-weight: bold;
 }
-main #section_4 .central_row .link span i {
+main #section_4 .central_row span i {
   margin-left: 5px;
 }
 main #section_4 .central_row .cartoon {
   margin-top: 30px;
 }
 main #section_4 .central_row .cartoon img {
-  width: 50%;
+  width: 65%;
+  margin-bottom: 30px;
+}
+main #section_5 {
+  padding-bottom: 60px;
+  background-color: #7F14D4;
+}
+main #section_5 .main_title {
+  margin-top: 50px;
+  font-weight: bold;
+  color: white;
+}
+main #section_5 #happy {
+  margin-bottom: 15px;
+}
+main #section_5 .bubble {
+  margin: 40px 0;
+  padding: 15px;
+  background-color: white;
+  border: 2px solid #0E14EE;
+  border-radius: 5px;
+}
+main #section_5 .bubble p {
+  font-weight: bold;
+}
+main #section_5 .bubble img {
+  width: 60px;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+main #section_5 .bubble .details {
+  padding-top: 20px;
+  font-weight: bold;
+}
+main #section_5 .bubble .details .name {
+  color: #13509e;
+}
+main #section_5 button {
+  margin-right: 10px;
+  padding: 5px;
+  border-color: #054a72;
+  border-radius: 5px;
+  background-color: #2c4792;
+}
+main #section_5 button img {
+  height: 25px;
+}
+main #section_5 button span {
+  margin-left: 5px;
+  font-weight: bold;
+  color: white;
+}
+main #section_5 span {
+  margin-right: 10px;
+  font-weight: bold;
+  color: white;
+}
+main #section_5 span i {
+  margin-left: 5px;
+}
+main #section_5 span a {
+  color: white;
+}
+main #section_5 .email_sign_up {
+  margin-top: 20px;
+}
+
+footer {
+  padding: 50px;
+}
+footer img {
+  height: 85px;
+  margin-bottom: 50px;
+}
+footer h4 {
+  margin-bottom: 30px;
+}
+footer p, footer i, footer h4, footer ul li {
+  font-weight: bold;
+}
+footer p, footer h4, footer a {
+  color: #3E14E9;
+}
+footer p {
+  margin-top: 10px;
+}
+footer p a {
+  color: black;
+}
+footer ul {
+  margin-bottom: 30px;
+}
+footer ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+footer a:hover {
+  text-decoration: none;
+  color: black;
 }

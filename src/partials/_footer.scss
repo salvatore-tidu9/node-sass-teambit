@@ -1,0 +1,44 @@
+footer {
+    padding: 50px;
+
+    img {
+        height: 85px;
+        margin-bottom: 50px;
+    }
+
+    h4 {
+        margin-bottom: 30px;
+    }
+
+    p, i, h4, ul li {
+        font-weight: bold;
+    }
+
+    p, h4, a {
+        color: $text_color;
+    }
+
+    p {
+        margin-top: 10px;
+    }
+
+    p {
+        a {
+            color: black;
+        }
+    }
+
+    ul {
+        margin-bottom: 30px;
+    }
+
+    ul li {
+        list-style: none;
+        margin-bottom: 10px;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: $link_color;
+    }
+}   

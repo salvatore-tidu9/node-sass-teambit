@@ -1,16 +1,16 @@
 // DEBUG
 
-.container {
-    border: 1px solid red;
-}
+// .container {
+//     border: 1px solid red;
+// }
 
-.row {
-    border: 1px solid black;
-}
+// .row {
+//     border: 1px solid black;
+// }
 
-[class*=col] {
-    border: 1px solid orange;
-}
+// [class*=col] {
+//     border: 1px solid orange;
+// }
 
 
 * {
@@ -21,6 +21,35 @@
 }
 
 body {
+    min-width: 428px;
     font-family: 'Lato', sans-serif;
 }
 
+
+@media screen and (max-width: 991px) {
+
+    [class*=col] {
+        text-align: center;
+    }
+
+    .logo_container {
+        padding-bottom: 10px;
+        text-align: left;
+    }
+
+    .menu, .central_row p {
+        display: none;
+    }
+
+    header nav .hamburger_menu {
+        visibility: visible;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .hamburger_menu {
+        visibility: hidden;
+        padding-bottom: 10px;
+    }
+}
